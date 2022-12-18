@@ -1,0 +1,104 @@
+:root {
+  font-size: clamp(0.925em, calc(0.625rem + ((1vw - 0.01em) * 0.5252)), 1.25em);
+  font-family: Lato, sans-serif;
+  --tagCloud: 160;
+  --size-nav: 100px;
+  --bg-color: rgba(255, 255, 255, 1);
+  --text-color: rgba(47, 48, 50, 1);
+  --text-strong-color: rgba(62, 62, 62, 1);
+  --border-color: rgba(229, 231, 233, 1);
+  --shadow-color: rgba(188, 191, 195, 1);
+  --outline-color: rgba(208, 206, 103, 1);
+  --mark-color: rgba(146, 146, 138, 0.08);
+  --special-color: rgba(146, 146, 138, 0);
+  --special-bg-color: rgba(150, 150, 141, 1);
+  --special-text-color: rgba(255, 255, 255, 1);
+  --special-shadow-color: rgba(105, 105, 101, 1);
+  --wave-color: rgb(0, 0, 0);
+  --list-color: rgba(197, 197, 191, 0.548);
+}
+
+@include mq(small) {
+  :root {
+    --tagCloud: 170;
+  }
+}
+
+@include mq(medium) {
+  :root {
+    --tagCloud: 200;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgba(32, 32, 32, 1);
+    --text-color: rgba(222, 223, 224, 1);
+    --text-strong-color: rgba(210, 210, 210, 1);
+    --border-color: rgba(47, 48, 50, 1);
+    --shadow-color: rgba(0, 0, 0, 1);
+    --outline-color: rgba(170, 169, 83, 1);
+    --mark-color: rgba(126, 126, 118, 0.08);
+    --special-color: rgba(126, 126, 118, 0);
+    --special-bg-color: rgba(111, 111, 104, 1);
+    --special-text-color: rgba(223, 223, 220, 1);
+    --special-shadow-color: rgba(45, 45, 43, 1);
+    --dark-color: rgba(53, 53, 50, 1);
+    --wave-color: rgb(255, 0, 0);
+    --list-color: rgba(43, 42, 42, 0.904);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: rgba(255, 255, 255, 1);
+    --text-color: rgba(47, 48, 50, 1);
+    --text-strong-color: rgba(62, 62, 62, 1);
+    --border-color: rgba(229, 231, 233, 1);
+    --shadow-color: rgba(188, 191, 195, 1);
+    --outline-color: rgba(208, 206, 103, 1);
+    --mark-color: rgba(146, 146, 138, 0.08);
+    --special-color: rgba(146, 146, 138, 0);
+    --special-bg-color: rgba(150, 150, 141, 1);
+    --special-text-color: rgba(255, 255, 255, 1);
+    --special-shadow-color: rgba(105, 105, 101, 1);
+    --wave-color: rgb(0, 0, 0);
+    --list-color: rgba(197, 197, 191, 0.548);
+  }
+}
+
+@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+  :root {
+    --bg-color: rgba(255, 255, 255, 1);
+    --text-color: rgba(47, 48, 50, 1);
+    --text-strong-color: rgba(62, 62, 62, 1);
+    --border-color: rgba(229, 231, 233, 1);
+    --shadow-color: rgba(188, 191, 195, 1);
+    --outline-color: rgba(208, 206, 103, 1);
+    --mark-color: rgba(146, 146, 138, 0.08);
+    --special-color: rgba(146, 146, 138, 0);
+    --special-bg-color: rgba(150, 150, 141, 1);
+    --special-text-color: rgba(255, 255, 255, 1);
+    --special-shadow-color: rgba(105, 105, 101, 1);
+    --wave-color: rgb(0, 0, 0);
+    --list-color: rgba(197, 197, 191, 0.548);
+  }
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  :root {
+    --bg-color: rgba(32, 32, 32, 1);
+    --text-color: rgba(222, 223, 224, 1);
+    --text-strong-color: rgba(210, 210, 210, 1);
+    --border-color: rgba(47, 48, 50, 1);
+    --shadow-color: rgba(0, 0, 0, 1);
+    --outline-color: rgba(170, 169, 83, 1);
+    --mark-color: rgba(126, 126, 118, 0.08);
+    --special-color: rgba(126, 126, 118, 0);
+    --special-bg-color: rgba(111, 111, 104, 1);
+    --special-text-color: rgba(223, 223, 220, 1);
+    --special-shadow-color: rgba(45, 45, 43, 1);
+    --dark-color: rgba(53, 53, 50, 1);
+    --wave-color: rgb(255, 0, 0);
+    --list-color: rgba(43, 42, 42, 0.904);
+  }
+}

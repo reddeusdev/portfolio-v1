@@ -1,0 +1,35 @@
+.footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      &-name {
+            margin-top: 20px;
+            padding: 30px;
+            font-size: 2em;
+            z-index: 9;
+      }
+
+      &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      &-grup {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-direction: row;
+      }
+
+      &-git {
+            height: 48px;
+            width: 48px;
+            margin: 10px;
+            border-radius: 50%;
+            fill: var(--wave-color);
+
+      }
+}

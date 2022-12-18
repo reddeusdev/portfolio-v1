@@ -1,0 +1,186 @@
+.about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-me {
+            width: 95vw;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      }
+
+      &-img {
+            border-radius: 50%;
+            height: 170px;
+            width: 170px;
+            margin: 20px;
+      }
+      &-link{
+            color: var(--wave-color);
+            display:inline-block;
+      }
+      &-me::before {
+            text-align: center;
+            content: "O mnie";
+            position: absolute;
+            top: -14px;
+            left: 30vw;
+            line-height: 22px;
+            width: 34vw;
+            background-color: var(--bg-color);
+            border: 3px solid var(--border-color);
+            border-radius: 20px;
+      }
+
+      &-container {
+            width: 95vw;
+            height: 24vh;
+            position: relative;
+      }
+
+      &-container::before {
+            content: "Cytaty";
+            position: absolute;
+            text-align: center;
+            top: -14px;
+            left: 30vw;
+            line-height: 22px;
+            width: 34vw;
+            background-color: var(--bg-color);
+            border: 3px solid var(--border-color);
+            border-radius: 20px;
+      }
+
+      &-autor {
+            position: absolute;
+            right: 20px;
+            font-weight: 700;
+      }
+
+      &-tech {
+            width: 95vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+      }
+
+      &-tech::before {
+            text-align: center;
+            content: "Technologie";
+            position: absolute;
+            top: -14px;
+            left: 30vw;
+            line-height: 22px;
+            width: 34vw;
+            background-color: var(--bg-color);
+            border: 3px solid var(--border-color);
+            border-radius: 20px;
+      }
+
+      &-typed {
+            @include centerer;
+            white-space: pre-wrap;
+            width: 80%;
+      }
+
+      &-tagcloud {
+            margin: 10px;
+
+            &--item:hover {
+                  color: var(--text-strong-color);
+                  cursor: pointer;
+                  text-shadow: 0px 0px 10px var(--outline-color);
+            }
+
+            &--item:nth-child(even) {}
+
+            &--item:nth-child(odd) {}
+      }
+}
+
+@include mq(small) {
+      .about {
+            margin: 0 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &-me {
+                  width: 45vw;
+                  height: 370px;
+            }
+
+            &-me::before {
+                  left: 5vw;
+            }
+
+            &-tech {
+                  width: 45vw;
+            }
+
+            &-tech::before {
+                  left: 5vw;
+            }
+
+            &-container {
+                  width: 70vw;
+                  height: 15vh;
+            }
+
+            &-container::before {
+                  left: 17vw;
+            }
+      }
+
+}
+
+@include mq(medium) {
+      .about {
+
+            &-me {
+                  width: 37vw;
+                  height: 430px;
+            }
+
+            &-me::before {
+                  left: 5vw;
+                  width: 70%;
+            }
+
+            &-tech {
+                  width: 37vw;
+            }
+
+            &-tech::before {
+                  left: 5vw;
+                  width: 70%;
+            }
+
+            &-container {
+                  width: 75vw;
+                  height: 15vh;
+            }
+
+            &-container::before {
+                  left: 20vw;
+            }
+      }
+}
+
+@include mq(large) {
+      .about {
+            &-me {
+                  flex-direction: row;
+            }
+
+            &-img {
+                  height: 200px;
+                  width: 200px;
+            }
+      }
+}
