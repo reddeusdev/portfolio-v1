@@ -2,5 +2,4 @@
 
 ## GitHub Puges
 
-
-https://reddeusdev.github.io/Portfolio/index.html
+https://reddeusdev.github.io/portfolio-v1/
